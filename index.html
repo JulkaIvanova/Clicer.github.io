@@ -20,12 +20,11 @@
                 background-size: 100%;
                 padding: 0;
                 margin: 0;
+                
             }
             main{
-                width: 1920px;
-                height: 955px;
                 background: none;
-                background-size: 100%;
+                /* background-size: 100%; */
                 image-rendering: optimizeQuality;
             }
             
@@ -53,7 +52,7 @@
                 letter-spacing: 1.96px;
                 text-transform: uppercase;    
                 text-align: center; 
-                margin-left: 750px;    
+                margin-left: 40%;    
                 margin-top: 10px;
             }
 
@@ -144,11 +143,14 @@
             #blockWithAll{
                 /* display: flex;  */
                 display: none;
-                flex-direction: row"
+                flex-direction: row;
+                width: 1920px;
+                height: 955px
+
             }
 
             #frog-1{
-                position: fixed; 
+                position: absolute; 
                 top: 700px; 
                 left: 300px; 
                 /* display: block; */
@@ -156,7 +158,7 @@
             }
 
             #livs-1{
-                position: fixed; 
+                position: absolute; 
                 top: 450px; 
                 left: 650px; 
                 display: none;
@@ -169,7 +171,7 @@
 
             }
             #kuvshincka{
-                position: fixed;
+                position: absolute;
                 width: 150px;
                 top: 650;
                 left: 1000px;
@@ -183,7 +185,7 @@
             }
 
             #litle-frog{
-                position: fixed;
+                position: absolute;
                 top: 500px;
                 left: 500;
                 width: 200px;
@@ -243,6 +245,8 @@
                 mainWindow.style.display = "flex"
                 frog.style.display = "block"
                 button_start.style.display = "none"
+                // body.style.width = "1920px"
+                // body.style.height = "955px"
                 avtoCoints()
             }
 
